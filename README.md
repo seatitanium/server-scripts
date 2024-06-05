@@ -12,5 +12,5 @@
 **常用**
 
 - `$(date +%Y-%m-%d_%H:%M:%S)` —— 当前日期时间
-- `screen -dm -S [SCREEN_NAME] [EXEC_PATH]` —— 用 screen 启动脚本并 detach
-- `ls -tr | head -n -$max_keep_count | xargs --no-run-if-empty rm -rf`
+- `screen -dm -S [SCREEN_NAME] [EXEC_PATH]` —— 用 screen 启动脚本并 detach，注意此指令不能间接执行
+- `ls -tr | head -n -$max_keep_count | xargs --no-run-if-empty rm -rf` —— 保留某个目录下的 `max_keep_count` 个文件
