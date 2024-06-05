@@ -1,3 +1,5 @@
+# Deploy Minecraft instance
+
 java_version=17
 data_disk=/dev/nvme1n1
 data_disk_mount_point=/mc
