@@ -8,3 +8,9 @@
   - 与 crontab 搭配使用，复制目录至指定目录，并总维持指定目录内的目录数不变，删去最老的目录。
 - `deploy-mc.sh`
   - 实例刚刚创建好以后用于安装环境的脚本。
+  
+**常用**
+
+- `$(date +%Y-%m-%d_%H:%M:%S)` —— 当前日期时间
+- `screen -dm -S [SCREEN_NAME] [EXEC_PATH]` —— 用 screen 启动脚本并 detach
+- `ls -tr | head -n -$max_keep_count | xargs --no-run-if-empty rm -rf`
