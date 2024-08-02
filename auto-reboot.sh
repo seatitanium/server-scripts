@@ -7,7 +7,7 @@ do
 		echo [$(date +%Y-%m-%d_%H:%M:%S)] Server is stopped, restarted.
 		echo ServerStop at [$(date +%Y-%m-%d_%H:%M:%S)] >> reboot_log.log
 		#/mc/atm9/boot.sh
-		screen -dm -S server /mc/atm9nf/startserver.sh
+		screen -dm -S server /mc/server/startserver.sh
 	else
 		echo [$(date +%Y-%m-%d_%H:%M:%S)] Server is still running, skipping.
 	fi
