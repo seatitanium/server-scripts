@@ -1,4 +1,4 @@
-ossdir=/root/oss
+ossdir=/mc/oss
 archive_remote_dir=oss://seatibackup/archive/
 archive_local_dir=/mc/atm9nf/world
 cd $ossdir
