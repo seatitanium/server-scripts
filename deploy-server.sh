@@ -38,12 +38,12 @@ cp ~/server-scripts/oss.ini ~/oss
 
 echo ---------downloading server content
 cd ~/oss
-./oss cp oss://seatibackups/archive/ /mc/server
+./oss cp oss://seatibackup/archive/ /mc/server
 cd /mc/server
 chmod +x *
 
-echo ---------staring server
-cd /mc/server-scripts
+echo ---------starting server
+cd ~/server-scripts
 screen -dm -S reboot ./auto-reboot.sh
 
 echo ---
