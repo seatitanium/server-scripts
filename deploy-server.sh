@@ -3,10 +3,11 @@ java_version=17
 data_disk_size='40 GiB'
 data_disk=$(fdisk -l | grep "$data_disk_size" | head -n 1 | awk '{print $2}' | sed 's/://')
 data_disk_mount_point=/mc
-data_disk_uuid=`blkid | grep $data_disk | sed 's/UUID=/ /g' | sed 's/"/ /g' | awk '{print $2}'`
 
 echo ---------formatting data disk
 mkfs.ext4 $data_disk
+# 必须在格式化以后获得
+data_disk_uuid=`blkid | grep $data_disk | sed 's/UUID=/ /g' | sed 's/"/ /g' | awk '{print $2}'`
 echo ---------data disk uuid=$data_disk_uuid
 echo ---------creating mount point and mount
 mkdir $data_disk_mount_point
