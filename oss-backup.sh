@@ -1,3 +1,3 @@
-ossdir=/mc/oss
+ossdir=~/oss
 cd $ossdir
 ./backup/backup.sh
